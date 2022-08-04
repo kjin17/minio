@@ -35,6 +35,8 @@ spec:
           value: "minio123"
         - name: CONSOLE_SECURE_TLS_REDIRECT
           value: "false"
+        - name: MINIO_SERVER_URL
+          value: "https://minio.localhost"
         ports:
         - containerPort: 9000
           hostPort: 9000
