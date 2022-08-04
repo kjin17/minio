@@ -33,8 +33,7 @@ spec:
           value: "minio"
         - name: MINIO_ROOT_PASSWORD
           value: "minio123"
-        - name: CONSOLE_SECURE_TLS_REDIRECT
-          value: off
+        - CONSOLE_SECURE_TLS_REDIRECT=off
         ports:
         - containerPort: 9000
           hostPort: 9000
