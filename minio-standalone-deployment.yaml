@@ -28,6 +28,8 @@ spec:
         args:
         - server
         - /storage
+        - --console-address
+        - :9001
         env:
         - name: MINIO_ROOT_USER
           value: "minio"
@@ -37,7 +39,7 @@ spec:
           value: "false"
         ports:
         - containerPort: 9000
-        #  hostPort: 9000
+          hostPort: 9000
         volumeMounts:
         - name: storage
           mountPath: "/storage"
