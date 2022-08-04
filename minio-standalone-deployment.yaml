@@ -37,7 +37,7 @@ spec:
           value: "false"
         ports:
         - containerPort: 9000
-          hostPort: 9000
+        #  hostPort: 9000
         volumeMounts:
         - name: storage
           mountPath: "/storage"
